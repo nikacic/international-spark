@@ -1,4 +1,4 @@
-# International Spark – web stranica (export)
+# International Spark - web stranica (export)
 
 Gotov dizajn početne stranice za **INTERNATIONAL SPARK j.d.o.o.** (elektroinstalacije, Hrvatska).
 Slogan: **„Radimo. Gradimo."**
@@ -14,11 +14,11 @@ README.md               ← ovaj dokument + prompt za ChatGPT
 ```
 
 `index.html` je jedna datoteka bez frameworka: čisti HTML + inline CSS, responzivno (radi na mobitelu).
-Može se odmah staviti na hosting (Hostinger, Plus Hosting…) – uploadaj cijelu mapu u `public_html`.
+Može se odmah staviti na hosting (Hostinger, Plus Hosting…) - uploadaj cijelu mapu u `public_html`.
 
 ## Dizajn sustav
 
-**Stil:** čisti „Apple" izgled – puno bijelog prostora, veliki naslovi, zaobljene kartice, minimalno boja.
+**Stil:** čisti „Apple" izgled - puno bijelog prostora, veliki naslovi, zaobljene kartice, minimalno boja.
 
 | Uloga | Boja |
 |---|---|
@@ -40,25 +40,25 @@ Naslovi bold 700, `letter-spacing` −0.03em; H1 `clamp(44px, 7vw, 88px)`.
 
 ## Struktura stranice
 
-1. **Navigacija** – sticky, prozirna s blur efektom; logo + Usluge / O nama / Kontakt + gumb „Ponuda"
-2. **Hero** – „Elektroinstalacije" / **Radimo. Gradimo.** / podnaslov / 2 gumba
-3. **Logo blok** – veliki znak na sivoj podlozi + oznake (Energetika, Vatrodojava, Videonadzor, Kontrola pristupa, Ozvučenje)
-4. **Usluge** (`#usluge`) – „Sve što struja treba. Na jednom mjestu." + 6 kartica (3×2, na mobitelu 1 stupac)
+1. **Navigacija** - sticky, prozirna s blur efektom; logo + Usluge / O nama / Kontakt + gumb „Ponuda"
+2. **Hero** - „Elektroinstalacije" / **Radimo. Gradimo.** / podnaslov / 2 gumba
+3. **Logo blok** - veliki znak na sivoj podlozi + oznake (Energetika, Vatrodojava, Videonadzor, Kontrola pristupa, Ozvučenje)
+4. **Usluge** (`#usluge`) - „Sve što struja treba. Na jednom mjestu." + 6 kartica (3×2, na mobitelu 1 stupac)
 5. **O nama** (`#o-nama`)
-6. **Kontakt** (`#kontakt`) – crni blok „Imate projekt?" + žuti gumb
-7. **Footer** – © + OIB + slogan
+6. **Kontakt** (`#kontakt`) - crni blok „Imate projekt?" + žuti gumb
+7. **Footer** - © + OIB + slogan
 
 ## Što još treba popuniti
 
-- `[TELEFON]`, `[E-MAIL]`, `[ADRESA]`, `[OIB]` – stvarni podaci firme
-- `mailto:info@international-spark.hr` i `tel:+385000000000` – zamijeniti pravim
+- `[TELEFON]`, `[E-MAIL]`, `[ADRESA]`, `[OIB]` - stvarni podaci firme
+- `mailto:info@international-spark.hr` i `tel:+385000000000` - zamijeniti pravim
 - Po želji: prave fotografije radova umjesto sivih kartica
 
 ---
 
 ## Prompt za ChatGPT (kopiraj i zalijepi zajedno s `index.html`)
 
-> I'm attaching `index.html` – a finished, static one-page website for a Croatian electrical-installation company, INTERNATIONAL SPARK j.d.o.o. (slogan „Radimo. Gradimo."). Keep the existing design exactly: Apple-style minimal look, Inter font, colors navy #022248, yellow #FDB403 (accent only), text #1D1D1F, grey #6E6E73, light card background #F5F5F7, pill buttons, 28px rounded cards, max content width 1080px. All copy stays in Croatian.
+> I'm attaching `index.html` - a finished, static one-page website for a Croatian electrical-installation company, INTERNATIONAL SPARK j.d.o.o. (slogan „Radimo. Gradimo."). Keep the existing design exactly: Apple-style minimal look, Inter font, colors navy #022248, yellow #FDB403 (accent only), text #1D1D1F, grey #6E6E73, light card background #F5F5F7, pill buttons, 28px rounded cards, max content width 1080px. All copy stays in Croatian.
 >
 > Please:
 > 1. Move the inline styles into a single `styles.css` with CSS variables for the colors above, keeping the look pixel-identical.
@@ -66,6 +66,6 @@ Naslovi bold 700, `letter-spacing` −0.03em; H1 `clamp(44px, 7vw, 88px)`.
 > 3. Replace the contact block's buttons with a working contact form (ime, e-mail, telefon, poruka) that sends via Formspree (leave the form ID as a placeholder), plus click-to-call and e-mail links.
 > 4. Add basic SEO: Open Graph tags, `lang="hr"`, LocalBusiness schema.org JSON-LD (Electrician) with placeholders for address, phone and OIB.
 > 5. Add subtle fade-in-on-scroll animations (IntersectionObserver, respect `prefers-reduced-motion`).
-> 6. Keep it plain HTML/CSS/JS – no frameworks – so it can be uploaded to shared hosting (public_html).
+> 6. Keep it plain HTML/CSS/JS - no frameworks - so it can be uploaded to shared hosting (public_html).
 >
 > Return the full files: `index.html`, `styles.css`, `script.js`.
